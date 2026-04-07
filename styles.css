@@ -10167,6 +10167,11 @@ body.accessibility-widget-visible ._access-menu {
   overflow: hidden !important;
 }
 
+#ai-section-1775579016245-26eoyaz .abt-np-date {
+  letter-spacing: 0.04em;
+  margin-inline-start: 16px;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
