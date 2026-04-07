@@ -1,0 +1,51 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+רכילות, סודות וסיפורים שאף אחד לא מספר — About That חושף את כל מה שקורה מאחורי הקלעים עם קופר, נייט, אדי ובְּרוֹנוִין. כנסו עכשיו.
+
+### סיפורים
+https://example.com/stories
+כתבות רכילות בלעדיות, חשיפות מפתיעות וסיפורים שיגרמו לכם לפול מהכיסא — כל הדרמה של ארבעת הדמויות במקום אחד. קראו לפני שכולם ידעו.
+
+### הארבעה
+https://example.com/the-four
+הכירו את קופר, נייט, אדי ובְּרוֹנוִין — ארבע הדמויות שעומדות במרכז כל הסיפורים הכי פיקנטיים. מי הם באמת? כל מה שרציתם לדעת נמצא כאן.
+
+### סיימון
+https://example.com/simon
+סיימון הוא הכותב שחושף הכל — עם עין חדה לדרמה ואצבע על הדופק של כל רכילות. גלו מי הוא, מה מניע אותו ולמה אי אפשר להפסיק לקרוא אותו.
+
+### צור קשר
+https://example.com/contact
+שמעתם משהו חם? יש לכם טיפ, סוד או סיפור שחייב להיחשף? צרו קשר עם About That עכשיו ותנו לסיימון לעשות את העבודה. הדרמה הבאה מתחילה בכם.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
