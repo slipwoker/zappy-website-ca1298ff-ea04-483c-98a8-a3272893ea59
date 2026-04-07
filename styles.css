@@ -10156,6 +10156,17 @@ body.accessibility-widget-visible ._access-menu {
   display: block;
 }
 
+#ai-section-1775579016245-26eoyaz .abt-articles-newspaper-grid {
+  gap: 24px !important;
+  border: none !important;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-card {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 12px rgba(91,62,42,0.10) !important;
+  overflow: hidden !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
