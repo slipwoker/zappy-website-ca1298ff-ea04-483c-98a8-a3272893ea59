@@ -258,8 +258,8 @@
       .sub-menu a:hover { background-color: #f5f5f5; }
       /* RTL (Hebrew/Arabic) dropdown positioning */
       [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
-      /* Hide empty dropdown menus */
-      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Hide empty dropdown menus (exclude catalog sub-menus that use <a> children instead of <li>) */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))):not(:has(> a)), .sub-menu:not(:has(li)):not(:has(> a)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
       /* Desktop: show submenu on Menu Group hover */
       li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
       /* Menu Group title styling */
@@ -268,7 +268,7 @@
       /* ========== MOBILE SUBMENU STYLES ========== */
       @media (max-width: 768px) {
         .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
-        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        .sub-menu.mobile-expanded { max-height: 60vh !important; overflow-y: auto !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
         [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
         /* Disable hover behavior on mobile */
         .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
@@ -817,13 +817,13 @@
   </div>
 </section>
 
-<section class="index-showcase-section" data-layout-spec="בית-showcase" dir="rtl">
+<section class="index-showcase-section" data-layout-spec="בית-showcase" dir="rtl" id="zappy-section-1">
   <div class="showcase-container">
 
     <!-- Intro Block -->
     <div class="showcase-intro">
-      <span class="showcase-label">הבלעדיות של סיימון</span>
-      <h2 class="showcase-heading">הסיפורים שכולם מדברים עליהם</h2>
+      <p class="zappy-editable"><span class="showcase-label">הבלעדיות של סיימון</span>
+      </p><h2 class="showcase-heading">הסיפורים שכולם מדברים עליהם</h2>
       <p class="showcase-subtext">ארבעה ילדים. אינסוף סודות. וסיימון יודע הכל.</p>
       <div class="showcase-rule"></div>
     </div>
@@ -831,11 +831,11 @@
     <!-- Lead Card -->
     <article class="showcase-lead-card">
       <div class="showcase-lead-image-wrap">
-        <img data-placeholder="index-showcase-image-1" data-context="Dramatic editorial close-up of a teenage boy named Cooper looking away with a conflicted expression, warm candid lighting, gossip blog aesthetic, muted warm tones, slightly blurred background suggesting a school or suburban setting" width="900" height="500" src="/assets/site-index-showcase-image-1.webp" alt="קופר — הסיפור הגדול">
+        <img data-placeholder="index-showcase-image-1" data-context="Dramatic editorial close-up of a teenage boy named Cooper looking away with a conflicted expression, warm candid lighting, gossip blog aesthetic, muted warm tones, slightly blurred background suggesting a school or suburban setting" width="900" height="500" src="/assets/site-index-showcase-image-1.webp" alt="קופר — הסיפור הגדול" data-element-type="image" data-element-id="img-1775573787304-f44cgacc2" >
         <div class="lead-tape lead-tape-tr"></div>
         <div class="lead-tape lead-tape-bl"></div>
-        <span class="lead-badge">חשיפה בלעדית</span>
-      </div>
+        <p class="zappy-editable"><span class="lead-badge">חשיפה בלעדית</span>
+      </p></div>
       <div class="showcase-lead-body">
         <div class="lead-meta">
           <span class="lead-author">מאת סיימון</span>
@@ -843,17 +843,19 @@
           <span class="lead-tag">קופר</span>
         </div>
         <h3 class="lead-title">הסוד שקופר לא רצה שאיש יגלה</h3>
-        <p class="lead-teaser">כולם חשבו שהם מכירים את קופר — הנחמד, הנאמן, זה שתמיד שם בשביל כולם. אבל מה שסיימון גילה בשבוע שעבר הוא לא פחות ממפץ שקט שמתפשט דרך כל הקבוצה. מישהו שמר על סוד חמור מאז כיתה ח׳, ועכשיו הוא עולה על פני השטח בדיוק בזמן הכי גרוע.</p>
-        <a href="#" class="lead-read-more">המשך לקרוא <span aria-hidden="true">←</span></a>
-      </div>
+        <p class="lead-teaser" >כוכב הבייסבול של השכבה זורק כדורים מהר מדי לאחרונה, נכון? מסתבר שזה לא רק כישרון טבעי ואימונים מפרכים. שמועות אומרות שהוא מקבל קצת 'עזרה' לא חוקית כדי לשפר ביצועים ולזכות במלגה.
+
+</p>
+        <p><a href="#" class="lead-read-more">המשך לקרוא <span aria-hidden="true">←</span></a>
+      </p></div>
     </article>
 
     <!-- Two Supporting Cards -->
-    <div class="showcase-supporting-grid">
+    <div class="showcase-supporting-grid zappy-preserve-css-grid" data-original-item-width="548" data-original-gap="24px" style="display: grid; --zappy-grid-cols: repeat(2, minmax(0, 1fr)); grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
 
-      <article class="showcase-support-card">
+      <article class="showcase-support-card" data-grid-item-index="0">
         <div class="support-image-wrap">
-          <img data-placeholder="index-showcase-image-2" data-context="Two teenagers Nate and Eddie in a tense conversation in a school hallway, candid documentary style, warm afternoon light, gossip blog editorial photography, emotional tension visible in body language" width="540" height="360" src="/assets/site-index-showcase-image-2.webp" alt="נייט ואדי — מתח בין חברים">
+          <img data-placeholder="index-showcase-image-2" data-context="Two teenagers Nate and Eddie in a tense conversation in a school hallway, candid documentary style, warm afternoon light, gossip blog editorial photography, emotional tension visible in body language" width="540" height="360" src="/assets/site-index-showcase-image-2.webp" alt="נייט ואדי — מתח בין חברים" data-element-type="image" data-element-id="img-1775573787304-wybek5xba" >
           <div class="support-tape support-tape-tl"></div>
         </div>
         <div class="support-body">
@@ -864,13 +866,13 @@
           </div>
           <h3 class="support-title">כשחברות הופכת לשדה קרב</h3>
           <p class="support-teaser">השמועה התחילה כמשפט תמים אחד, אבל עד שהגיעה לאוזניו של נייט היא כבר הפכה למשהו אחר לגמרי. אדי טוען שלא אמר כלום. נייט לא מאמין לו. וסיימון? סיימון ראה את הכל.</p>
-          <a href="#" class="support-read-more">קרא עוד <span aria-hidden="true">←</span></a>
-        </div>
+          <p class="zappy-editable"><a href="#" class="support-read-more">קרא עוד <span aria-hidden="true">←</span></a>
+        </p></div>
       </article>
 
-      <article class="showcase-support-card showcase-support-card--offset">
+      <article class="showcase-support-card showcase-support-card--offset" data-grid-item-index="1">
         <div class="support-image-wrap">
-          <img data-placeholder="index-showcase-image-3" data-context="A teenage girl named Bronwyn sitting alone reading a note with a worried expression, soft natural light from a window, intimate and emotional mood, warm editorial photography for a gossip blog" width="540" height="360" src="/assets/site-index-showcase-image-3.webp" alt="ברנווין — רגע אינטימי">
+          <img data-placeholder="index-showcase-image-3" data-context="A teenage girl named Bronwyn sitting alone reading a note with a worried expression, soft natural light from a window, intimate and emotional mood, warm editorial photography for a gossip blog" width="540" height="360" src="/assets/site-index-showcase-image-3.webp" alt="ברנווין — רגע אינטימי" data-element-type="image" data-element-id="img-1775573787304-o9h2imwx7" >
           <div class="support-tape support-tape-tr"></div>
         </div>
         <div class="support-body">
@@ -881,8 +883,8 @@
           </div>
           <h3 class="support-title">ברנווין קיבלה הודעה שהיא לא אמורה לראות</h3>
           <p class="support-teaser">פתק אחד. שלוש מילים. וברנווין לא ישנה מאז. מי שלח? למה עכשיו? התשובות שסיימון מצא הן מטרידות בדיוק כפי שהיה אפשר לצפות.</p>
-          <a href="#" class="support-read-more">קרא עוד <span aria-hidden="true">←</span></a>
-        </div>
+          <p class="zappy-editable"><a href="#" class="support-read-more">קרא עוד <span aria-hidden="true">←</span></a>
+        </p></div>
       </article>
 
     </div>
