@@ -9044,6 +9044,322 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+/* Added Component Styles */
+/* =============================================
+   AT Articles Section — About That
+   ============================================= */
+
+.at-articles-section {
+  background: #1a1018;
+  padding: 80px 20px 90px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+}
+
+/* Container */
+.at-articles-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.at-articles-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.at-articles-tag {
+  display: inline-block;
+  background: var(--gradient-primary, linear-gradient(180deg, #de7b47 0%, #c96737 100%));
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+.at-articles-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.at-articles-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+}
+
+/* Grid */
+.at-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.at-article-card {
+  background: #26191f;
+  border: 1px solid rgba(201, 107, 75, 0.22);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.at-article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(201, 107, 75, 0.22);
+  border-color: rgba(201, 107, 75, 0.55);
+}
+
+/* Link reset */
+.at-article-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.at-article-link:focus-visible {
+  outline: 2px solid var(--primary, #C96B4B);
+  outline-offset: 3px;
+}
+
+/* Image wrap */
+.at-article-image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.at-article-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.at-article-card:hover .at-article-img {
+  transform: scale(1.04);
+}
+
+/* Badge */
+.at-article-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(201, 107, 75, 0.92);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(4px);
+}
+
+.at-badge-hot {
+  background: rgba(180, 40, 40, 0.9);
+}
+
+/* Body */
+.at-article-body {
+  padding: 24px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+
+/* Meta */
+.at-article-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.at-article-category {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary, #C96B4B);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.at-article-dot {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+
+.at-article-date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Headline */
+.at-article-headline {
+  font-size: clamp(1.05rem, 2vw, 1.22rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+/* Excerpt */
+.at-article-excerpt {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.58);
+  margin: 0;
+  line-height: 1.65;
+  flex: 1;
+}
+
+/* Footer */
+.at-article-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  flex-wrap: wrap;
+}
+
+.at-article-read-more {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary, #C96B4B);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: gap 0.2s ease;
+}
+
+.at-article-card:hover .at-article-read-more {
+  gap: 9px;
+}
+
+.at-article-arrow {
+  display: inline-block;
+  font-size: 15px;
+  transition: transform 0.2s ease;
+}
+
+.at-article-card:hover .at-article-arrow {
+  transform: translateX(-3px);
+}
+
+/* Stats */
+.at-article-stats {
+  display: flex;
+  gap: 10px;
+}
+
+.at-article-stat {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+}
+
+/* CTA */
+.at-articles-cta-wrap {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.at-articles-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 2px solid var(--primary, #C96B4B);
+  color: var(--primary, #C96B4B);
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.at-articles-cta:hover {
+  background: var(--primary, #C96B4B);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(201, 107, 75, 0.35);
+}
+
+.at-articles-cta:focus-visible {
+  outline: 2px solid var(--primary, #C96B4B);
+  outline-offset: 4px;
+}
+
+.at-cta-arrow {
+  font-size: 17px;
+  transition: transform 0.2s ease;
+}
+
+.at-articles-cta:hover .at-cta-arrow {
+  transform: translateX(-4px);
+}
+
+/* =============================================
+   Responsive — Tablet
+   ============================================= */
+@media (max-width: 768px) {
+  .at-articles-section {
+    padding: 60px 16px 70px;
+  }
+
+  .at-articles-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .at-articles-header {
+    margin-bottom: 38px;
+  }
+
+  .at-article-body {
+    padding: 20px 18px 16px;
+  }
+
+  .at-articles-cta {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 14px 24px;
+  }
+}
+
+/* =============================================
+   Responsive — Mobile Small
+   ============================================= */
+@media (max-width: 480px) {
+  .at-articles-title {
+    font-size: 1.6rem;
+  }
+
+  .at-article-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
