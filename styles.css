@@ -10032,6 +10032,112 @@ body.accessibility-widget-visible ._access-menu {
   background-color: #f6efe3 !important;
 }
 
+#ai-section-1775579016245-26eoyaz .abt-articles-newspaper-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 0 !important;
+  border: 1px solid var(--border-light);
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-card {
+  background: #fdf8f2;
+  border: 1px solid var(--border-light);
+  padding: 22px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s ease;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-card:hover {
+  background: #faf3e8;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-excerpt {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-rule {
+  display: block;
+  height: 1px;
+  background: var(--border-light);
+  width: 100%;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-author {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-author strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-read-more {
+  font-size: 13px;
+  color: var(--primary);
+  font-weight: 600;
+  display: inline-block;
+}
+
+#ai-section-1775579016245-26eoyaz .abt-np-card:hover .abt-np-read-more {
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+#ai-section-1775579016245-26eoyaz .abt-articles-newspaper-grid {
+  grid-template-columns: 1fr !important;
+}
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
