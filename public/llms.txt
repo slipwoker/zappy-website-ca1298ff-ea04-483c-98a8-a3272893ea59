@@ -1,43 +1,55 @@
-# Business — Generative Engine Optimization Map
+# About That — Generative Engine Optimization Map
+
+> About That is a gossip and entertainment blog run by a writer named Simon, featuring exclusive stories and gossip articles about four kids named Cooper, Nate, Eddie, and Bronwyn. The site has a tabloid-style personality centered around drama, intrigue, and personal stories of these four characters. The brand carries a playful yet edgy vibe typical of celebrity gossip platforms, with a focus on storytelling and revealing insider information.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://about-that.zappy5.app
 רכילות, סודות וסיפורים שאף אחד לא מספר — About That חושף את כל מה שקורה מאחורי הקלעים עם קופר, נייט, אדי ובְּרוֹנוִין. כנסו עכשיו.
 
 ### כתבות
-https://example.com/articles-writing
+https://about-that.zappy5.app/articles-writing
 כתבות רכילות בלעדיות, חשיפות מפתיעות וסיפורים שיגרמו לכם לפול מהכיסא — כל הדרמה של ארבעת הדמויות במקום אחד. קראו לפני שכולם ידעו.
 
 ### צור קשר
-https://example.com/contact
+https://about-that.zappy5.app/contact
 שמעתם משהו חם? יש לכם טיפ, סוד או סיפור שחייב להיחשף? צרו קשר עם About That עכשיו ותנו לסיימון לעשות את העבודה. הדרמה הבאה מתחילה בכם.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://about-that.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://about-that.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://about-that.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About About That
+About That is a gossip and entertainment blog run by a writer named Simon, featuring exclusive stories and gossip articles about four kids named Cooper, Nate, Eddie, and Bronwyn. The site has a tabloid-style personality centered around drama, intrigue, and personal stories of these four characters. The brand carries a playful yet edgy vibe typical of celebrity gossip platforms, with a focus on storytelling and revealing insider information.
+
+## Target Audience
+- משפיעני רשתות חברתיות
+- חובבי בידור
+- חובבי ידוענים
+
+## Industry
+מדיה ובידור / רכילות
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://about-that.zappy5.app/sitemap.xml
+- **Robots.txt**: https://about-that.zappy5.app/robots.txt
