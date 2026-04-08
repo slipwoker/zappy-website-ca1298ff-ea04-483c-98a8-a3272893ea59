@@ -10199,6 +10199,23 @@ body.accessibility-widget-visible ._access-menu {
   gap: 0 !important;
 }
 
+.contact-channels-section .channel-card-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.contact-channels-section .channel-card-link {
+  display: inline-block !important;
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
