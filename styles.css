@@ -10216,6 +10216,15 @@ body.accessibility-widget-visible ._access-menu {
   opacity: 1 !important;
 }
 
+.contact-contact-form-section .ccf-container {
+  grid-template-columns: 1fr !important;
+  max-width: 640px !important;
+}
+
+.contact-intro-section .contact-intro-figure {
+  display: none !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
