@@ -10225,6 +10225,22 @@ body.accessibility-widget-visible ._access-menu {
   display: none !important;
 }
 
+.contact-intro-section {
+  padding-bottom: 0 !important;
+}
+
+.contact-intro-section .contact-intro-arc-wrapper {
+  display: none !important;
+}
+
+.contact-contact-form-section {
+  padding-top: 40px !important;
+}
+
+.contact-contact-form-section .ccf-divider-wrapper {
+  display: none !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
