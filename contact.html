@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +734,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '[business_phone]';
         
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -1000,25 +1000,20 @@
       <!-- Column 1: Company Info -->
       <div class="footer-col footer-brand">
         <a href="/" class="footer-logo-link">
-          <img src="/assets/business-logo.webp" alt="About That" class="logo">
+          <img src="/assets/business-logo.webp" alt="About That" class="logo" data-zappy-footer-image="true">
         </a>
         <p class="footer-tagline">הסיפורים שכולם מדברים עליהם — מהמקור הכי קרוב.</p>
         <div class="footer-social">
-          <a href="[facebook_handle]" aria-label="Facebook" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-          <a href="[instagram_handle]" aria-label="Instagram" class="social-btn"><i class="fab fa-instagram"></i></a>
-          <a href="[whatsapp_handle]" aria-label="WhatsApp" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="[facebook_handle]" aria-label="Facebook" class="social-btn" data-element-type="button" data-element-id="btn-1775671075550-tpirvhp4t" data-native-element="true"><i class="fab fa-facebook-f"></i></a>
+          <a href="[instagram_handle]" aria-label="Instagram" class="social-btn" data-element-type="button" data-element-id="btn-1775671075550-2rraa6njg" data-native-element="true"><i class="fab fa-instagram"></i></a>
+          <a href="[whatsapp_handle]" aria-label="WhatsApp" class="social-btn" data-element-type="button" data-element-id="btn-1775671075550-a7dz0b7uq" data-native-element="true"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
 
       <!-- Column 2: Quick Links -->
       <div class="footer-col">
         <h3 class="footer-heading">ניווט מהיר</h3>
-        <ul class="footer-nav">
-          <li><a href="/articles-writing">כתבות</a></li>
-          
-          <li><a href="/simon">סיימון</a></li>
-          <li><a href="/contact">צור קשר</a></li>
-        </ul>
+        <ul class="footer-nav" ><li><a href="/articles-writing">כתבות</a></li><li><a href="/simon">סיימון</a></li><li><a href="/contact">צור קשר</a></li></ul>
       </div>
 
       <!-- Column 3: Contact Info -->
@@ -1026,15 +1021,14 @@
         <h3 class="footer-heading">יצירת קשר</h3>
         <ul class="footer-contact">
           <li>
-            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-            <span class="contact-text"><a href="mailto:[business_email]">[business_email]</a></span>
+            <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1775671075552-42qc2puhi" data-icon-type="fontawesome"></i></span>
+            <span class="contact-text"><a href="/cdn-cgi/l/email-protection#e3b88196908a8d869090bc868e828a8fbe" >Samonstory1@gmail.con</a></span>
           </li>
           <li>
-            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-            <span class="contact-text"><a href="tel:[business_phone]">[business_phone]</a></span>
+            <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1775671075552-r2sjwfd80" data-icon-type="fontawesome"></i></span>
+            <span class="contact-text"><a href="tel:[business_phone]" >0525381248</a></span>
           </li>
-          <li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-            <span class="contact-text">[business_address]</span></a></li>
+          <li><a href="/" ><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span></a><a href="/" style="font-size: 16px; text-align: right; display: inline !important;"><span class="contact-text" style="display: inline !important;">[business_address]</span></a></li>
         </ul>
       </div>
 
