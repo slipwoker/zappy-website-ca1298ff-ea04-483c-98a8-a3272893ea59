@@ -1,6 +1,4 @@
-# About That — Generative Engine Optimization Map
-
-> About That is a gossip and entertainment blog run by a writer named Simon, featuring exclusive stories and gossip articles about four kids named Cooper, Nate, Eddie, and Bronwyn. The site has a tabloid-style personality centered around drama, intrigue, and personal stories of these four characters. The brand carries a playful yet edgy vibe typical of celebrity gossip platforms, with a focus on storytelling and revealing insider information.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -36,17 +34,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About About That
-About That is a gossip and entertainment blog run by a writer named Simon, featuring exclusive stories and gossip articles about four kids named Cooper, Nate, Eddie, and Bronwyn. The site has a tabloid-style personality centered around drama, intrigue, and personal stories of these four characters. The brand carries a playful yet edgy vibe typical of celebrity gossip platforms, with a focus on storytelling and revealing insider information.
-
-## Target Audience
-- משפיעני רשתות חברתיות
-- חובבי בידור
-- חובבי ידוענים
-
-## Industry
-מדיה ובידור / רכילות
-
+## About Business
 ---
 
 # Additional Resources
