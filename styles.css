@@ -10416,6 +10416,16 @@ body.accessibility-widget-visible ._access-menu {
 /* === BUTTON TEXT OVERRIDES END === */
 
 
+#zappy-section-articles-extra .showcase-support-card {
+  background: var(--background-color) !important;
+  background-color: var(--background-color) !important;
+}
+
+#zappy-section-articles-extra .showcase-support-card .support-body {
+  background: var(--background-color) !important;
+  background-color: var(--background-color) !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
