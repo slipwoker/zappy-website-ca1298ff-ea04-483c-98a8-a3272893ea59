@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +734,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '[business_phone]';
         
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -798,7 +798,7 @@
       <!-- Handwritten mini note -->
       <p ><span class="index-hero-note" aria-label="הערת סיימון">&nbsp;מה שסיימון יודע, סיימון מספר</span>
 
-      </p><h1 class="index-hero-h1" >הסודות, הדרמה,<br><br><br><br><br><br><br><br>וכל מה שביניהם</h1>
+      </p><h1 class="index-hero-h1" >הסודות, הדרמה,<br>וכל מה שביניהם</h1>
 
       <h3 class="index-hero-subtitle" >סיימון מפרסם כתבות רכילות בלעדיות הסיפורים שלא תשמעו משום מקום אחר.</h3>
 
