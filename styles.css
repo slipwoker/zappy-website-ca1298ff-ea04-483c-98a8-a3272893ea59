@@ -10251,6 +10251,45 @@ body.accessibility-widget-visible ._access-menu {
   max-width: 680px !important;
 }
 
+.abt-articles-section {
+  direction: rtl;
+  text-align: right;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible !important;
+}
+
+.contact-intro-section,
+.contact-contact-form-section,
+.contact-channels-section,
+.contact-guidelines-section {
+  direction: rtl !important;
+  text-align: right !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+.contact-contact-form-section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.contact-channels-section {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.contact-intro-section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.contact-contact-form-section {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
