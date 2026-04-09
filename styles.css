@@ -10354,6 +10354,10 @@ body.accessibility-widget-visible ._access-menu {
   grid-template-columns: 1fr !important;
 }
 
+#ai-section-1775579016245-26eoyaz .abt-articles-newspaper-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
