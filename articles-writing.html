@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +734,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '[business_phone]';
         
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -795,10 +795,10 @@
     <div class="abt-articles-grid abt-articles-newspaper-grid zappy-preserve-css-grid" id="zappy-auto-grid-1775579130747-lek8kv" style="--zappy-grid-cols: repeat(3, 1fr); display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; align-items: stretch !important;" data-zappy-explicit-columns="true" data-zappy-auto-grid="true" data-original-item-width="384" data-original-gap="24px">
 
       <!-- Article 1 -->
-      <article class="abt-np-card" data-grid-item-index="0" style="overflow: hidden !important;">
+      <article class="abt-np-card" data-grid-item-index="0" style="overflow: hidden !important; display: flex !important; flex-direction: column !important; justify-content: flex-start !important; align-items: stretch !important; align-self: stretch !important; height: 100% !important;">
         <div class="abt-np-card-link">
           <div class="abt-np-card-img-wrapper">
-            <div data-zappy-zoom-wrapper="true" data-element-id="img-1775580565106-9qbdanm1e" data-element-type="image" data-zappy-zoom-wrapper-width="328px" data-zappy-zoom-wrapper-height="328px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 328px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 328px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/site-abt-article-1-1775691536277-t0qr4a.webp?v=1775691537985" alt="העימות שנייט ואדי חשבו שאף אחד לא ראה" class="abt-np-card-img" data-placeholder="abt-article-image-1" data-context="Moody cinematic scene of two teenage boys having a tense confrontation in a dimly lit school corridor, dramatic side lighting, film grain, desaturated warm tones, secretive atmosphere" data-element-type="image" data-element-id="img-1775580565106-9qbdanm1e" style="display: block; object-position: 50% 50% !important; width: 110.438% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; margin: 0px !important; position: absolute !important; left: -7.51515% !important; top: 0% !important; max-height: none !important;" data-zappy-original-width="328.4375" data-zappy-original-height="328.4375" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-mobile-object-position="50% 50%" data-zappy-mobile-zoom="1"></div>
+            <div data-zappy-zoom-wrapper="true" data-element-id="img-1775580565106-9qbdanm1e" data-element-type="image" data-zappy-zoom-wrapper-width="328px" data-zappy-zoom-wrapper-height="328px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 328px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 328px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/site-abt-article-1-1775691536277-t0qr4a.webp?v=1775691537985" alt="העימות שנייט ואדי חשבו שאף אחד לא ראה" class="abt-np-card-img" data-placeholder="abt-article-image-1" data-context="Moody cinematic scene of two teenage boys having a tense confrontation in a dimly lit school corridor, dramatic side lighting, film grain, desaturated warm tones, secretive atmosphere" data-element-type="image" data-element-id="img-1775580565106-9qbdanm1e" style="display: block !important; object-position: 50% 50% !important; width: 178.971% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; margin: 0px !important; position: absolute !important; left: -39.4855% !important; top: 0% !important; max-height: none !important;" data-zappy-original-width="328.4375" data-zappy-original-height="328.4375" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-mobile-object-position="50% 50%" data-zappy-mobile-zoom="1"></div>
           </div>
           <div class="abt-np-card-top">
             <span class="abt-np-tag">רג'י</span>
@@ -816,29 +816,13 @@
       </article>
 
       <!-- Article 2 -->
-      <article class="abt-np-card" data-grid-item-index="1" style="overflow: hidden !important;">
-        <div class="abt-np-card-link">
-          <div class="abt-np-card-img-wrapper">
-            <div data-zappy-zoom-wrapper="true" data-element-id="img-1775580565106-9e9vf6ik2" data-element-type="image" data-zappy-zoom-wrapper-width="328px" data-zappy-zoom-wrapper-height="328px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 328px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 328px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/site-abt-article-2-1775683906977-q6pmtc.webp?v=1775683909484" alt="ברנווין שלחה הודעה שלא הייתה אמורה לשלוח" class="abt-np-card-img" data-placeholder="abt-article-image-2" data-context="Teenage girl looking shocked at her phone screen in a school setting, dramatic lighting, cinematic film style, warm muted tones, tense secretive atmosphere" data-element-type="image" data-element-id="img-1775580565106-9e9vf6ik2" style="object-fit: cover !important; display: block !important; object-position: 50% 50% !important; width: 178.971% !important; height: 100% !important; max-width: none !important; margin: 0px !important; left: -39.4855% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-original-width="328.44793701171875" data-zappy-original-height="328.44793701171875" data-zappy-object-position="50% 50%" data-zappy-zoom="1"></div>
-          </div>
-          <div class="abt-np-card-top" >
-            <span class="abt-np-tag" >איידן</span>
-            <span class="abt-np-date" >5 בפבואר 2025</span>
-          </div>
-          <h3 class="abt-np-title" >התחביב הסודי של איידן</h3>
-          <p class="abt-np-excerpt" >כולם חושבים שהם מכירים את איידן, אבל מסתבר שיש לו תחביב סודי בארון... תרתי משמע. מי היה מאמין שהוא אוהב למדוד בגדי נשים בזמנו הפנוי?</p>
-          <div class="abt-np-footer">
-            <span class="abt-np-rule"></span>
-            <span class="abt-np-author">מאת <strong>סיימון</strong></span>
-          </div>
-          </div>
-      </article>
+      
 
       <!-- Article 3 -->
-      <article class="abt-np-card" data-grid-item-index="2">
+      <article class="abt-np-card" data-grid-item-index="1" style="display: flex !important; flex-direction: column !important; justify-content: flex-end !important; align-items: stretch !important; align-self: stretch !important; height: 100% !important;">
         <div class="abt-np-card-link">
           <div class="abt-np-card-img-wrapper">
-            <div data-zappy-zoom-wrapper="true" data-element-id="img-1775580565106-f62201c0k" data-element-type="image" data-zappy-zoom-wrapper-width="336px" data-zappy-zoom-wrapper-height="338px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 336px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 338px !important; display: block !important;"><img src="/assets/site-abt-article-2-1775690786809-e8sgrb.webp?v=1775690788570" alt="הסוד של ליה" class="abt-np-card-img" data-placeholder="abt-article-image-3" data-context="Teenage girl smiling secretly, school setting, warm amber editorial tones" data-element-type="image" data-element-id="img-1775580565106-f62201c0k" style="width: 176.097% !important; max-width: none !important; object-position: 50% 50% !important; margin: 0px !important; display: block !important; left: -38.0483% !important; top: 0% !important; height: 100% !important; max-height: none !important; object-fit: cover !important; position: absolute !important;" data-pixel-width="332" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="336" data-zappy-original-height="338"></div>
+            <div data-zappy-zoom-wrapper="true" data-element-id="img-1775580565106-f62201c0k" data-element-type="image" data-zappy-zoom-wrapper-width="336px" data-zappy-zoom-wrapper-height="338px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 336px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 338px !important; display: block !important;"><img src="/assets/site-abt-article-2-1775690786809-e8sgrb.webp?v=1775690788570" alt="הסוד של ליה" class="abt-np-card-img" data-placeholder="abt-article-image-3" data-context="Teenage girl smiling secretly, school setting, warm amber editorial tones" data-element-type="image" data-element-id="img-1775580565106-f62201c0k" style="width: 177.151% !important; max-width: none !important; object-position: 50% 50% !important; margin: 0px !important; display: block !important; left: -38.5756% !important; top: 0% !important; height: 100% !important; max-height: none !important; object-fit: cover !important; position: absolute !important;" data-pixel-width="332" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="336" data-zappy-original-height="338"></div>
           </div>
           <div class="abt-np-card-top">
             <span class="abt-np-tag">ליה ג'קסון</span>
@@ -854,7 +838,7 @@
       </article>
 
       <!-- Article 4 -->
-      <article class="abt-np-card" data-grid-item-index="3">
+      <article class="abt-np-card" data-grid-item-index="2" style="display: flex !important; flex-direction: column !important; justify-content: flex-end !important; align-items: stretch !important; align-self: stretch !important; height: 100% !important;">
         <div class="abt-np-card-link">
           <div class="abt-np-card-img-wrapper">
             <img src="/assets/site-stories-intro-image-1-1775691238742-l0zlbr.webp?v=1775691238742" alt="קופר ושני הסודות" class="abt-np-card-img" data-placeholder="abt-article-image-4" data-context="" data-element-type="image" data-element-id="img-1775580565106-btykvg1e6" >
@@ -865,6 +849,22 @@
           </div>
           <h3 class="abt-np-title" >המלכה האם או המלכה הרעה?</h3>
           <p class="abt-np-excerpt" >ונסה חושבת שהיא שולטת במסדרונות של בייוויו, אבל אולי כדאי שהיא תבדוק מה החברות הכי טובות שלה אומרות עליה מאחורי הגב. מסתבר שלא כולם מעריצים את הדרך שבה היא דורכת על אנשים כדי להישאר בפסגה. ראי הוזהרת.</p>
+          <div class="abt-np-footer">
+            <span class="abt-np-rule"></span>
+            <span class="abt-np-author">מאת <strong>סיימון</strong></span>
+          </div>
+          </div>
+      </article><article class="abt-np-card" data-grid-item-index="3" style="overflow: hidden !important;">
+        <div class="abt-np-card-link">
+          <div class="abt-np-card-img-wrapper">
+            <div data-zappy-zoom-wrapper="true" data-element-id="img-1775580565106-9e9vf6ik2" data-element-type="image" data-zappy-zoom-wrapper-width="328px" data-zappy-zoom-wrapper-height="328px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 328px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 328px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/site-abt-article-2-1775683906977-q6pmtc.webp?v=1775683909484" alt="ברנווין שלחה הודעה שלא הייתה אמורה לשלוח" class="abt-np-card-img" data-placeholder="abt-article-image-2" data-context="Teenage girl looking shocked at her phone screen in a school setting, dramatic lighting, cinematic film style, warm muted tones, tense secretive atmosphere" data-element-type="image" data-element-id="img-1775580565106-9e9vf6ik2" style="object-fit: cover !important; display: block !important; object-position: 50% 50% !important; width: 178.971% !important; height: 100% !important; max-width: none !important; margin: 0px !important; left: -39.4855% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-original-width="328.44793701171875" data-zappy-original-height="328.44793701171875" data-zappy-object-position="50% 50%" data-zappy-zoom="1"></div>
+          </div>
+          <div class="abt-np-card-top" >
+            <span class="abt-np-tag" >איידן</span>
+            <span class="abt-np-date" >5 בפבואר 2025</span>
+          </div>
+          <h3 class="abt-np-title" >התחביב הסודי של איידן</h3>
+          <p class="abt-np-excerpt" >כולם חושבים שהם מכירים את איידן, אבל מסתבר שיש לו תחביב סודי בארון... תרתי משמע. מי היה מאמין שהוא אוהב למדוד בגדי נשים בזמנו הפנוי?</p>
           <div class="abt-np-footer">
             <span class="abt-np-rule"></span>
             <span class="abt-np-author">מאת <strong>סיימון</strong></span>
