@@ -10445,6 +10445,40 @@ body.accessibility-widget-visible ._access-menu {
   background-color: var(--background-color) !important;
 }
 
+#zappy-section-1 .showcase-support-card,
+#zappy-section-articles-extra .showcase-support-card {
+  background: #FFF8F0 !important;
+  background-color: #FFF8F0 !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 12px rgba(91,62,42,0.10) !important;
+}
+
+#zappy-section-1 .showcase-support-card .support-body,
+#zappy-section-articles-extra .showcase-support-card .support-body {
+  background: #FFF8F0 !important;
+  background-color: #FFF8F0 !important;
+  padding: 20px !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#zappy-section-1 .showcase-lead-card {
+  background: #FFF8F0 !important;
+  background-color: #FFF8F0 !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 12px rgba(91,62,42,0.10) !important;
+}
+
+#zappy-section-1 .support-image-wrap,
+#zappy-section-articles-extra .support-image-wrap {
+  position: relative !important;
+  overflow: hidden !important;
+  height: 220px !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
