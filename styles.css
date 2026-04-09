@@ -10337,6 +10337,19 @@ body.accessibility-widget-visible ._access-menu {
   height: 1px !important;
 }
 
+.abt-articles-section {
+  overflow: hidden !important;
+}
+
+.contact-intro-section,
+.contact-contact-form-section,
+.contact-channels-section,
+.contact-guidelines-section {
+  max-width: 100vw !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
